@@ -398,7 +398,7 @@ color: rgb(64, 64, 64);
 
 /*end common style*/
 
-
+/*start home page style*/
 
 
 .home-banner {
@@ -491,6 +491,7 @@ color: rgb(64, 64, 64);
   padding-bottom: 100px;
 }
 
+/*end home page style*/
 
 /*start shop page style*/
 .shop{
@@ -531,3 +532,37 @@ color: rgb(64, 64, 64);
 
 
 /*end shop page style*/
+/*start about page style*/
+.about-banner{
+  width: 1140px;
+  margin: auto;
+  .heading-h3{
+    margin: 0;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    
+  }
+  img{
+    margin-top: 20px;
+  }
+    
+}
+.story{
+  width: 1140px;
+  margin: auto;
+  .para-2{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    line-height: 42px;
+    font-style: normal;
+    width: 495px;
+
+  }
+  .para-3{
+    font-style: normal;
+  }
+  .para-typo{
+    font-style: normal;
+  }
+ 
+}
