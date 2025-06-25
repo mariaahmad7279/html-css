@@ -550,19 +550,101 @@ color: rgb(64, 64, 64);
 .story{
   width: 1140px;
   margin: auto;
+  padding-top: 100px 0;
+  .passion-text{
+    text-align: center;
+    
+  }
   .para-2{
     color: rgb(0, 0, 0);
     font-size: 24px;
     line-height: 42px;
     font-style: normal;
     width: 495px;
+    margin-bottom: 0;
+    padding: 0;
 
   }
   .para-3{
     font-style: normal;
+    width: 460px;
+  
   }
   .para-typo{
     font-style: normal;
+    margin: 0;
   }
+.intro{
+  padding-top: 100px;
+  
+    
+}
+.intro-img{
+  display: flex;
+  gap: 50px;
+
+}
  
+}
+.craft{
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+  .heading-h3{
+    font-size: 120px;
+    color: rgb(213, 213, 213);
+    
+  }
+  .heading-typo{
+    font-size: 120px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    
+  }
+}
+.commitment{
+  width: 1140px;
+  margin: auto;
+  .para-typo{
+    font-style: normal;
+    margin: 0;
+  }
+  .para-3{
+    width: 520px;
+   
+  }
+}
+.assurance{
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 50px;
+  padding: 100px 0;
+  .para-typo{
+    font-style: normal;
+    margin: 0;
+  }
+  .para-3{
+    width: 480px;
+   
+  }
+}
+.service{
+  width: 1140px;
+  margin: auto;
+  padding-top: 100px;
+  .heading-typo{
+    font-size: 120px;
+    color: rgb(213, 213, 213);
+    
+  }
+  .para-3{
+    font-size: 25px;
+    color: rgb(64, 64, 64);
+    margin: 0;
+    
+  }
 }
