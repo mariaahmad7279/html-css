@@ -93,7 +93,7 @@
   font-weight: 400;
   line-height: 110px;
   font-family: 'Sorts Mill Goudy', serif;
-  width: 40px;
+
 }
 
 .para-typo {
@@ -636,18 +636,54 @@ color: rgb(64, 64, 64);
   width: 1140px;
   margin: auto;
   padding-top: 100px;
+  .customer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   .heading-typo{
     font-size: 120px;
     color: rgb(213, 213, 213);
+    text-align: center;
+    margin: 0;
     
   }
   .para-3{
     font-size: 25px;
     color: rgb(64, 64, 64);
     margin-bottom:30px;
-    padding-left: 8%;
-    padding-right: 8%;
+    width: 800px;
     text-align: center;
+    
+  }
+}
+.contact{
+  width: 1140px;
+  margin: auto;
+  .contact-section{
+    display: flex;
+    width: 1140px;
+    margin: auto;
+    gap: 50px;
+  }
+  .para-3{
+    font-size: 19px;
+    color: rgb(64, 64, 64);
+    
+  }
+  .para-2{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .heading-h3{
+    font-size: 70px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    
     
   }
 }
