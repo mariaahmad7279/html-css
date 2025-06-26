@@ -644,7 +644,10 @@ color: rgb(64, 64, 64);
   .para-3{
     font-size: 25px;
     color: rgb(64, 64, 64);
-    margin: 0;
+    margin-bottom:30px;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: center;
     
   }
 }
