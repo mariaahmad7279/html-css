@@ -662,28 +662,109 @@ color: rgb(64, 64, 64);
 .contact{
   width: 1140px;
   margin: auto;
-  .contact-section{
-    display: flex;
-    width: 1140px;
-    margin: auto;
-    gap: 50px;
+  
+}
+.contact-section{
+  display: flex;
+  width: 1140px;
+  margin: auto;
+  gap: 50px;
+}
+.para-3{
+  font-size: 19px;
+  color: rgb(64, 64, 64);
+  
+}
+.para-2{
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  
+}
+
+.heading-h3{
+  font-size: 70px;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  
+  
+}
+.visit{
+  width: 1140px;
+  margin: auto;
+  text-align: right;
+
+
+  .heading-typo{
+    font-size: 120px;
+    color: rgb(213, 213, 213);
+    margin: 0;
+  }
+  .para-typo{
+    font-style: normal;
+    margin: 0;
   }
   .para-3{
-    font-size: 19px;
-    color: rgb(64, 64, 64);
-    
+    font-size: 28px;
+    margin: 0;
   }
-  .para-2{
-    font-size: 22px;
-    color: rgb(0, 0, 0);
-    
+}
+.form-section {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  gap: 2rem;
+  .form {
+    margin-top: 100px;
+    margin-right: 2rem;
+    display: block;
   }
   
-  .heading-h3{
-    font-size: 70px;
-    margin: 0;
-    color: rgb(0, 0, 0);
-    
-    
+
+  .required {
+    color: red;
+  }
+.para-typo{
+  font-style: normal;
+}
+.para-3{
+  font-size: 17px;
+}
+  input
+   {
+    outline: 0;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 1px solid #555;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+   
+  }
+  
+  textarea {
+   margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;  /* Adds space between label and input */
+    font-size: 16px;
+    color: #555;
+  }
+  
+
+ 
+  input:focus-visible,textarea:focus-visible{
+color: rgb(119, 119, 119)
+;
+border-color: red;
+outline: red;
   }
 }
