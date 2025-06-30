@@ -209,23 +209,31 @@ color: rgb(64, 64, 64);
       }
     }
 
-    .themify {
-      padding-top: 20px;
-      text-align: center;
-
-      p {
-        color: rgb(0, 0, 0);
-        font-size: 15px;
-        font-weight: 400;
-        font-family: Nunito, sans-serif;
-
-        &:hover {
-          color: rgb(210, 170, 92);
-        }
-      }
+   
+  }
+  a{
+    color: #000;
+    text-decoration: none;
+    &:hover{
+      color: rgb(210, 170, 92);
     }
   }
 
+}
+.themify {
+  padding-top: 20px;
+  text-align: center;
+
+  p {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Nunito, sans-serif;
+
+    &:hover {
+      color: rgb(210, 170, 92);
+    }
+  }
 }
 
 .scroll-up {
