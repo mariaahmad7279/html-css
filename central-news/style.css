@@ -7,7 +7,7 @@
 }
 
 .header-content{
-    width: 1140px;
+    width: 1400px;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -17,14 +17,85 @@ padding: 10px;
         display: flex;
         align-items: center;
         gap: 30px;
+        color: white;
     }
     .header-item{
         display: flex;
         align-items: center;
         gap: 10px;
+        color: white;
     }
     .logo{
         width: 100px;
         padding: 10px;
     }
+    .para1{
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        font-style: normal;
+        font-family: Lato, sans-serif
+        ;
+        &:hover{
+            color: rgb(231, 19, 26);
+            background-color: white;
+            
+        }
+    }
+
+}
+.top-stories{
+    display: flex;
+    width: 1430px;
+    margin: auto;
+    justify-content: space-between;
+    .div1{
+        display: flex;
+    
+        img{
+            width: 585px;
+        }
+    }
+    .div2{
+        
+        img{
+            width:327px;
+        }
+    }
+    .date{
+        color:rgb(136, 136, 136);
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: Lato, sans-serif
+        ;
+    }
+    .heading-typo{
+        color:rgb(49, 49, 49);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        font-style: normal;
+        font-family: Alegreya, serif
+        ;
+    }
+    .heading-typo2{
+        color:rgb(49, 49, 49);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        font-style: normal;
+        font-family: Alegreya, serif
+        ;
+    }
+    .heading{
+        color:rgb(49, 49, 49);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        font-style: normal;
+        font-family: Alegreya, serif
+        ;
+    }
+    
 }
