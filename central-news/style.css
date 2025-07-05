@@ -50,10 +50,13 @@ padding: 10px;
     margin: auto;
     justify-content: space-between;
     .div1{
-        display: flex;
+.all3-divs{
+    display: flex;
+    
+}
     
         img{
-            width: 585px;
+            width:450px;
         }
     }
     .div2{
@@ -61,6 +64,7 @@ padding: 10px;
         img{
             width:327px;
         }
+    }    
     }
     .date{
         color:rgb(136, 136, 136);
@@ -78,6 +82,7 @@ padding: 10px;
         font-style: normal;
         font-family: Alegreya, serif
         ;
+       
     }
     .heading-typo2{
         color:rgb(49, 49, 49);
@@ -87,7 +92,9 @@ padding: 10px;
         font-style: normal;
         font-family: Alegreya, serif
         ;
-    }
+        border-bottom: 1px solid rgb(136, 136, 136);
+        padding-bottom: 5px;
+        }
     .heading{
         color:rgb(49, 49, 49);
         font-size: 24px;
@@ -97,5 +104,55 @@ padding: 10px;
         font-family: Alegreya, serif
         ;
     }
-    
-}
+    video-section h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      .video-grid {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .video-card {
+        max-width: 100%;
+        width: 250px;
+      }
+      
+      .video-thumb {
+        position: relative;
+      }
+      
+      .video-thumb img {
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+      }
+      
+      .play-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0,0,0,0.6);
+        color: white;
+        border-radius: 50%;
+        padding: 10px 14px;
+        font-size: 18px;
+      }
+      
+      .video-card h4 {
+        font-size: 16px;
+        margin: 10px 0 5px;
+      }
+      
+      .video-card p {
+        font-size: 13px;
+        color: #888;
+      }
+      .img{
+        width: 1430px;
+        margin: auto;
+        padding: 50px 0;
+        text-align: center;
+      }
