@@ -156,3 +156,21 @@ padding: 10px;
         padding: 50px 0;
         text-align: center;
       }
+      .pol-bus{
+        width: 1430px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .politics{
+            display: flex;
+            width: 50%;
+            gap: 15px;
+          
+        }
+        .business{
+            display: flex;
+            width: 50%;
+            gap: 15px;
+          
+        }
+      }
