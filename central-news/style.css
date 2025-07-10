@@ -1,329 +1,398 @@
-
-
 /*start common style*/
-.header{
-    width: 100%;
-    background-color: red;
+.header {
+  width: 100%;
+  background-color: red;
 }
 
-.header-content{
-    width: 1400px;
+.header-content {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+
+  .head-menu {
     display: flex;
-    justify-content: space-between;
-    margin: auto;
-padding: 10px;
-    text-align: center;
-    .head-menu{
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        color: white;
+    align-items: center;
+    gap: 30px;
+    color: white;
+  }
+
+  .header-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+  }
+
+  .logo {
+    width: 100px;
+    padding: 10px;
+  }
+
+  .para1 {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: Lato, sans-serif;
+
+    &:hover {
+      color: rgb(231, 19, 26);
+      background-color: white;
+
     }
-    .header-item{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: white;
-    }
-    .logo{
-        width: 100px;
-        padding: 10px;
-    }
-    .para1{
-        color: white;
-        font-size: 15px;
-        font-weight: 700;
-        font-style: normal;
-        font-family: Lato, sans-serif
-        ;
-        &:hover{
-            color: rgb(231, 19, 26);
-            background-color: white;
-            
-        }
-    }
+  }
 
 }
-.data{
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 25px;
-    color:rgb(49, 49, 49);
-    font-family: Alegreya, serif
-    ;
-    border-bottom: 1px solid rgb(136, 136, 136);
-    padding-bottom: 5px;
+.date {
+  color: rgb(136, 136, 136);
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: Lato, sans-serif;
 }
-.date{
-    color:rgb(136, 136, 136);
-    font-size: 12px;
-    font-weight: 400;
-    font-style: normal;
-    font-family: Lato, sans-serif
-    ;
+.secondary-heading {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 22px;
+  color: rgb(49, 49, 49);
+  font-family: Alegreya, serif;
+  border-bottom: 1px solid rgb(136, 136, 136);
+  padding-bottom: 5px;
+  &:hover{
+    color: rgb(231, 19, 26);
+  }
 }
+.primary-heading{
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 28px;
+  color: black;
+  font-family: Alegreya, serif;
+  margin-bottom: 20px;
+}
+
+
+
+
+
 /*end common style*/
-.top-stories{
+.top-stories {
+  display: flex;
+  width: 1430px;
+  margin: auto;
+  justify-content: space-between;
+  .all3-divs {
     display: flex;
-    width: 1430px;
-    margin: auto;
-    justify-content: space-between;
-    .div1{
-.all3-divs{
-    display: flex;
-    
-}
-    
-        img{
-            width:450px;
+    gap: 15px;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    padding-bottom: 35px;
+    margin: 15px ;
+  }
+  .div-1{
+    border-right: 1px solid rgb(136, 136, 136);
+    padding-right: 10px;
+  }
+  .div-3{
+    .secondary-heading{
+      font-weight: 600;
+      
+    }
+    border-left: 1px solid rgb(136, 136, 136);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .div-2{
+    .secondary-heading{
+      font-size: 27px;
+      text-align: center;
+      color: black;
+      line-height: 36px;
+    }
+    .date{
+      text-align: center;
+      span{
+        color: black;
+        margin-right: 10px;
+        &:hover{
+          color: red;
         }
+      }
+      
     }
-    .div2{
-        
-        img{
-            width:327px;
-        }
-    }    
+  }
+  .div2{
+    border-left: 1px solid rgb(136, 136, 136);
+    padding-left: 10px;
+    .secondary-heading{
+      font-weight: 600;
+      font-size: 18px;
+      
     }
-   
-    .{
-       
-        font-weight: 600;
-       
-       
+    .primary-heading{
+      color: rgb(231, 19, 26);
+      
     }
-    .data{
+  }
 
-        font-size: 16px;
-        font-weight: 500;
-        
-       
-        }
-    .heading{
-        color:rgb(49, 49, 49);
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 32px;
-        font-style: normal;
-        font-family: Alegreya, serif
-        ;
+  .top-story-img {
+    width: 460px;
+   
+  }
+  .sidebar-img {
+    width: 350px;
+   
+  }
+
+ 
+  .video-section {
+    .secondary-heading{
+      color: black;
+      border: none;
     }
-    video-section h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .video-grid {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .video-card {
+      max-width: 100%;
+      width: 190px;
+      border-left: 1px solid #DEDEDE;
+      padding-left: 10px;
+      &:nth-child(1){
+        border-left: none;
+      }
+      &:nth-child(5){
+        padding-right: 15px;
       }
       
-      .video-grid {
-        display: flex;
-        gap: 20px;
-      }
-      
-      .video-card {
-        max-width: 100%;
-        width: 250px;
-      }
-      
-      .video-thumb {
-        position: relative;
-      }
-      
-      .video-thumb img {
-        width: 100%;
-        display: block;
-        border-radius: 4px;
-      }
-      
-      .play-icon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(0,0,0,0.6);
-        color: white;
-        border-radius: 50%;
-        padding: 10px 14px;
-        font-size: 18px;
-      }
-      
-      .video-card h4 {
-        font-size: 16px;
-        margin: 10px 0 5px;
-      }
-      
-      .video-card p {
-        font-size: 13px;
-        color: #888;
-      }
-      .img{
-        width: 1430px;
-        margin: auto;
-        padding: 50px 0;
-        text-align: center;
-      }
-      .pol-bus{
-        width: 1430px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        .politics{
-            display: flex;
-            width: 50%;
-            gap: 15px;
-            img{
-                width: 300px;
-            }
-            .font500(16-17-18){
-                font-size: 18px;
-                font-weight: 500;
-                font-style: normal;
-                line-height: 22px;
-                color:gray;
-                font-family: Alegreya, serif
-                ;
-            }
-            .font(16-17-18)
-            {
-                font-size: 17px;
-                font-weight: 500;
-                font-style: normal;
-                line-height: 22px;
-                color:gray;
-                font-family: Alegreya, serif
-                ;
-            }
-          
-        }
-        .business{
-            display: flex;
-            width: 50%;
-            gap: 15px;
-            img{
-                width: 210px;
-                height: 250px;
-            }
-            .font(16-17-18){
-                font-size: 16px;
-                font-weight: 600;
-                font-style: normal;
-                line-height: 22px;
-                color:black;
-                font-family: Alegreya, serif
-                ;
-            }
-            .font(16-17-18){
-                font-size: 16px;
-                font-weight: 500;
-                font-style: normal;
-                line-height: 22px;
-                color:black;
-                font-family: Alegreya, serif
-                ;
-            }
-           
-          
+     
+    }
+  
+    .video-thumb {
+      position: relative;
+      &:hover{
+        .play-icon{
+          visibility: hidden;
         }
       }
-      .entertainment{
-        width: 1430px;
-        
-      }
-     
-      
-      .news-section {
-        display: flex;
-        gap: 30px;
-        width: 1430px;
-        margin: auto;
-      }
-      
-      .category {
-        font-family: Alegreya, serif;
-        font-weight: 700;
-        font-style: normal;
-        line-height: 28px;
-        color: rgb(231, 19, 26);
-        font-size: 21px;
-        margin-bottom: 15px;
-      }
-      
-      .featured {
-        position: relative;
-        
-      }
-      
-      .featured img {
-        width: 100%;
-        height: auto;
-        
-      }
-      
-      .overlay {
-        position: absolute;
-        bottom: 10px;
-        
-        color: white;
-        
-        padding: 15px;
-       
-      }
-      
-      .overlay h3 {
-        font-size: 16px;
-        margin: 0 0 5px;
-      }
-      
-      .date {
-        font-size: 12px;
-        color: #ddd;
-      }
-      
-     
-      
-      .data {
-        padding: 8px 0;
-        border-bottom: 1px solid #eee;
-        font-size: 15px;
-      }
-     
-      
-      .latest-update {
-        max-width: 1200px;
-        margin: auto;
-      }
-      
-      .latest-update h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-      }
-      
-      .update-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 30px;
-      }
-      
-      .update-item {
-        display: flex;
-        gap: 15px;
-      }
-      
-      .update-item img {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        flex-shrink: 0;
-      }
-      
-      .update-info h3 {
-        font-size: 16px;
-        margin: 0 0 8px;
-        line-height: 1.3;
-      }
-      
-      .date {
-        font-size: 13px;
-        color: #666;
-      }
-      
-      
+    }
+  
+    .video-thumb img {
+      width: 100%;
+      display: block;
+    
+    }
+  
+    .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border-radius: 50%;
+      padding: 10px 14px;
+      font-size: 18px;
+      visibility: hidden;
+    }
+  
+    .video-card h4 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+  
+    .video-card p {
+      font-size: 13px;
+      color: #888;
+    }
+  }
+}
+
+
+
+.img {
+  width: 1430px;
+  margin: auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.pol-bus {
+  width: 1430px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  .politics {
+    display: flex;
+    width: 50%;
+    gap: 15px;
+
+    img {
+      width: 300px;
+    }
+
+    .font500(16-17-18) {
+      font-size: 18px;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 22px;
+      color: gray;
+      font-family: Alegreya, serif;
+    }
+
+    .font(16-17-18) {
+      font-size: 17px;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 22px;
+      color: gray;
+      font-family: Alegreya, serif;
+    }
+
+  }
+
+  .business {
+    display: flex;
+    width: 50%;
+    gap: 15px;
+
+    img {
+      width: 210px;
+      height: 250px;
+    }
+
+    .font(16-17-18) {
+      font-size: 16px;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 22px;
+      color: black;
+      font-family: Alegreya, serif;
+    }
+
+    .font(16-17-18) {
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 22px;
+      color: black;
+      font-family: Alegreya, serif;
+    }
+
+
+  }
+}
+
+.entertainment {
+  width: 1430px;
+
+}
+
+
+.news-section {
+  display: flex;
+  gap: 30px;
+  width: 1430px;
+  margin: auto;
+}
+
+.category {
+  font-family: Alegreya, serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 28px;
+  color: rgb(231, 19, 26);
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.featured {
+  position: relative;
+
+}
+
+.featured img {
+  width: 100%;
+  height: auto;
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10px;
+
+  color: white;
+
+  padding: 15px;
+
+}
+
+.overlay h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.date {
+  font-size: 12px;
+  color: #ddd;
+}
+
+
+
+.data {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+
+.latest-update {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.latest-update h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.update-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.update-item {
+  display: flex;
+  gap: 15px;
+}
+
+.update-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.update-info h3 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.date {
+  font-size: 13px;
+  color: #666;
+}
