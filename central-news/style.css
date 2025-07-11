@@ -60,10 +60,10 @@
   line-height: 22px;
   color: rgb(49, 49, 49);
   font-family: Alegreya, serif;
-  border-bottom: 1px solid rgb(136, 136, 136);
+  border-bottom: 1px solid #DEDEDE;
   padding-bottom: 5px;
   &:hover{
-    color: rgb(231, 19, 26);
+    color: rgb(231, 19, 26)!important;
   }
 }
 .primary-heading{
@@ -89,12 +89,12 @@
   .all3-divs {
     display: flex;
     gap: 15px;
-    border-bottom: 1px solid rgb(136, 136, 136);
+    border-bottom: 1px solid #DEDEDE;
     padding-bottom: 35px;
     margin: 15px ;
   }
   .div-1{
-    border-right: 1px solid rgb(136, 136, 136);
+    border-right: 1px solid #DEDEDE;
     padding-right: 10px;
   }
   .div-3{
@@ -102,7 +102,7 @@
       font-weight: 600;
       
     }
-    border-left: 1px solid rgb(136, 136, 136);
+    border-left: 1px solid #DEDEDE;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -126,7 +126,7 @@
     }
   }
   .div2{
-    border-left: 1px solid rgb(136, 136, 136);
+    border-left: 1px solid #DEDEDE;
     padding-left: 10px;
     .secondary-heading{
       font-weight: 600;
@@ -236,59 +236,55 @@
 
   .politics {
     display: flex;
-    width: 50%;
+   
     gap: 15px;
+    .brexit{
+      .secondary-heading{
+        font-size: 18px;
+        
+      }
+      
+    }
 
     img {
       width: 300px;
     }
-
-    .font500(16-17-18) {
+    .primary-heading{
+      color: rgb(231, 19, 26);
       font-size: 18px;
       font-weight: 500;
-      font-style: normal;
-      line-height: 22px;
-      color: gray;
-      font-family: Alegreya, serif;
     }
 
-    .font(16-17-18) {
+    .secondary-heading {
       font-size: 17px;
-      font-weight: 500;
-      font-style: normal;
-      line-height: 22px;
-      color: gray;
-      font-family: Alegreya, serif;
+      color: black;
+     
     }
-
   }
 
-  .business {
+  .business-content {
     display: flex;
-    width: 50%;
+   
     gap: 15px;
+    .peloton{
+      padding: 25px 0 0 50px;
+      .secondary-heading{
+        font-weight:500;
+        
+      }
+      
+    }
 
     img {
       width: 210px;
-      height: 250px;
     }
 
-    .font(16-17-18) {
+    .secondary-heading {
       font-size: 16px;
       font-weight: 600;
-      font-style: normal;
-      line-height: 22px;
+     
       color: black;
-      font-family: Alegreya, serif;
-    }
-
-    .font(16-17-18) {
-      font-size: 16px;
-      font-weight: 500;
-      font-style: normal;
-      line-height: 22px;
-      color: black;
-      font-family: Alegreya, serif;
+     
     }
 
 
