@@ -283,6 +283,22 @@
 }
 .entertainment {
   width: 1430px;
+  margin: auto;
+  .sport{
+    display: flex;
+    gap: 15px;
+    .sport-img{
+      width: 210px;
+    }
+  }
+ 
+  .robot{
+    display: flex;
+    gap: 15px;
+    .robot-img{
+      width: 210px;
+    }
+  }
 
 }
 .news-section {
@@ -339,7 +355,7 @@
 
 }
 .latest-news{
-  padding: 30px;
+width: 1430px;
   margin: auto;
   .secondary-heading{
     font-size: 18px;
@@ -347,7 +363,7 @@
   }
   .main-div{
     display: flex;
-    gap: 31px;
+    row-gap: 15px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -365,63 +381,57 @@
   }
     
   }
-  /* Reset */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  margin: 4px 0;
-}
-.footer-col{
-  .date{
-    font-size: 18px;
-    color:rgb(255, 255, 255);
-    &:hover{
-      color: rgb(231, 19, 26);
-    }
-  }
-
-}
-
-
 .footer {
   background: #000;
   color: white;
   padding: 40px 20px 0;
-}
-
-.footer-top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border-bottom: 1px solid #222;
-  padding-bottom: 30px;
-  .date{
-    font-size: 16px;
-    
+  .footer-content{
+    width: 1430px;
+    margin: auto;
   }
-}
-
-.footer-logo img {
-  width: 120px;
-  margin-bottom: 20px;
-}
-
-.footer-columns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.footer-col {
-  min-width: 150px;
-}
-
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+    padding-bottom: 30px;
+    .date{
+      font-size: 16px;
+      
+    }
+  }
+  .footer-logo img {
+    width: 120px;
+   
+  
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 4px 0;
+  }
+  .footer-col{
+    .date{
+      font-size: 18px;
+      color:rgb(255, 255, 255);
+      &:hover{
+        color: rgb(231, 19, 26);
+      }
+    }
+  
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-col {
+    min-width: 150px;
+  }
+  
 .subscribe-box {
   margin-top: 10px;
 }
@@ -437,7 +447,7 @@ a {
 
 .footer-youtube {
   margin-left: auto;
-  margin-top: 20px;
+ 
 }
 
 .youtube-btn {
@@ -468,5 +478,14 @@ a {
   color: white;
   cursor: pointer;
 }
+}
+
+
+
+
+
+
+
+
 
  
