@@ -1,4 +1,9 @@
 /*start common style*/
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   width: 100%;
   background-color: red;
@@ -9,13 +14,11 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
-  padding: 10px;
   text-align: center;
 
   .head-menu {
     display: flex;
     align-items: center;
-    gap: 30px;
     color: white;
   }
 
@@ -25,14 +28,20 @@
     gap: 10px;
     color: white;
   }
-
-  .logo {
-    width: 100px;
-    padding: 10px;
+  .logo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .logo-img {
+      width: 100px;
+      padding: 10px;
+    }
   }
+
+ 
 
   .para1 {
     color: white;
+    padding: 20px;
     font-size: 15px;
     font-weight: 700;
     font-style: normal;
@@ -74,6 +83,9 @@
   color: black;
   font-family: Alegreya, serif;
   margin-bottom: 20px;
+}
+a{
+  text-decoration: none;
 }
 /*end common style*/
 .top-stories {
@@ -219,16 +231,20 @@
   }
 }
 .img {
-  width: 1430px;
+ 
   margin: auto;
-  padding: 50px 0;
+  padding: 50px;
   text-align: center;
+  border-bottom: 1px solid #DEDEDE;
 }
 .pol-bus {
   width: 1430px;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #DEDEDE;
 
   .politics {
     display: flex;
@@ -322,6 +338,9 @@
 .entertainment {
   width: 1430px;
   margin: auto;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #DEDEDE;
   .sport{
     display: flex; 
     gap: 30px;
@@ -346,6 +365,8 @@ flex-wrap: wrap;
   gap: 30px;
   width: 1430px;
   margin: auto;
+  margin-top: 50px;
+  padding-bottom: 15px;
   .featured {
     position: relative;
   
@@ -397,6 +418,10 @@ flex-wrap: wrap;
 .latest-news{
 width: 1430px;
   margin: auto;
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top: 1px solid #DEDEDE;
+  padding-bottom: 50px;
   .secondary-heading{
     font-size: 18px;
     border-bottom: none;
@@ -561,6 +586,23 @@ width: 1430px;
   }
 
 }
+
+
+.scroll-up {
+  bottom: 30px;
+  right: 10px;
+  position: fixed;
+  align-content: center;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(231, 19, 26);
+
+  .fas.fa-arrow-up {
+    color: white;
+  }
+}
+
 
 
 
