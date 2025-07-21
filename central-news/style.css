@@ -690,6 +690,9 @@ a {
   gap: 50px;
   h1{
     text-align: center;
+    span{
+      color: rgb(231, 19, 26);
+    }
   }
 
   .politics-item {
@@ -703,6 +706,7 @@ a {
     }
 
   }
+ 
 
   .politics-item img {
     width: 450px;
