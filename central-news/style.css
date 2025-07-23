@@ -299,6 +299,7 @@ a {
       
     }
     .sub-menu{
+      margin-top: 5px;
       position: absolute;
       visibility: hidden;
       width: 200px;
@@ -309,6 +310,16 @@ a {
       color: black;
       &:hover{
         color: red;
+        .secondary-heading{
+          padding: 5px;
+          
+          
+        }
+      }
+      .secondary-heading{
+       border-bottom: none;
+       text-align: left;
+       padding: 5px; 
       }
     }
   }
@@ -748,6 +759,31 @@ a {
       opacity: 0.9;
       
     }
+  }
+  .politics-item{
+    /* display: flex;
+    margin: auto;
+    */
+    .img-icon{
+      
+      position: relative;
+      &:hover .play-icon{
+        visibility: hidden;
+      }
+      .play-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        border-radius: 50%;
+        padding: 10px 14px;
+        font-size: 18px;
+        visibility: visible;
+      }
+    }
+
   }
 
   .primary-heading {

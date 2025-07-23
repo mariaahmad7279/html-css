@@ -11,11 +11,15 @@
             position: relative;
             & li:hover .sub-menu{
               visibility: visible;
+              display: block;
             }
             
             li a {
               text-decoration: none;
               display: block;
+            }
+            ul{
+              list-style: none;
             }
             
             .sub-menu{
@@ -25,8 +29,12 @@
               height: 100px;
               background-color: #f9f9f9;
               color: black;
+              display: block;
               &:hover{
                 color: red;
+              }
+              a {
+                display: block;
               }
            
              
@@ -34,6 +42,7 @@
             }
         }
     
+       
 
    
 
@@ -44,8 +53,7 @@
 
     </style>
     
-</head>
-<body>
+
     
     
     
@@ -57,10 +65,15 @@
 </div>
 
 <a href=""> <p class="para1">Home
-  <i class="fa fa-chevron-down"></i>
-<a href="">Home1</a>
-<a href="">Home2</a>
-<a href="">Home3</a></p></a>
+  <i class="fa fa-chevron-down"></i></a>
+  <div class="sub-menu">
+    <a href="">Home1</a>
+    <a href="">Home2</a>
+    <a href="">Home3</a></p>
+  </div>
+
+
+
 
 </body>
 </html>
