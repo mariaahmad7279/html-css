@@ -17,6 +17,8 @@ body{
             a{
                 color: white;
                 text-decoration: none;
+                display: flex;
+                gap: 10px;
             }
            
         }
@@ -26,6 +28,13 @@ body{
             a{
                 text-decoration: none;
                 color: white;
+                display: flex;
+                gap: 5px;
+                border-right: 1px solid white;
+                padding-right: 5px; 
+                &:last-child{
+                    border-right: none;
+                }
                
             }
         }
@@ -70,6 +79,7 @@ body{
     height: 100vh;
     .home-content{
         text-align: center;
+        padding-top: 350px;
         .primary{
             color: white;
         }
@@ -78,11 +88,16 @@ body{
         }
         .para{
             color: white;
+            i{
+              gap: 10px;
+             
+            }
+           
         }
         .button{
             display: flex;
-            gap: 20px;
-            justify-content: space-evenly;
+            gap: 40px;
+            justify-content: center;
             .btn1{
                 padding: 20px 20px;
                 background-color: #3F1771;
@@ -110,18 +125,19 @@ body{
 
         
     }
-   
-    
+ 
 }
 .agency {
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 20px;
+  padding-top:30px;
     display: flex;
     justify-content: space-between;
-    gap: 40px;
-    /* align-items: flex-start; */
-    /* flex-wrap: wrap; */
+    gap: 40px; 
+    background-color: #EDF5F8;
+    .agency-content{
+        display: flex;
+        width: 1200px;
+        margin: auto;
+    }
     .section-left {
       flex: 1;
       min-width: 250px;
@@ -194,60 +210,42 @@ body{
     }
     
   }
-  .center-section {
+  .center-section{
+    width: 1430px;
+    margin: auto;
     text-align: center;
-    padding: 80px 20px;
-    background-color: #fff;
-    font-family: 'Segoe UI', sans-serif;
-    .center-section .tagline {
-      color: #666;
-      text-transform: uppercase;
-      font-size: 14px;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-      position: relative;
+    .tagline{
+      border-bottom: 1px solid gray;
+      width: 300px;
+      margin: auto;
+
     }
-    
-    .center-section h1 {
-      font-size: 36px;
-      color: #111;
-      font-weight: 700;
-      margin: 20px 0;
-      line-height: 1.4;
+    .description{
+      width: 700px;
+     margin: auto;
     }
-    
-    .center-section .description {
-      font-size: 16px;
-      color: #777;
-      max-width: 700px;
-      margin: 0 auto 40px;
-      line-height: 1.8;
-    }
-    
-    .line-circle {
+    .line-circle{
       position: relative;
       height: 150px;
-      margin-bottom: 20px;
+      .circle {
+        width: 50px;
+        height: 50px;
+        background-color: #ddd;
+        border-radius: 50%;
+        margin: 0 auto;
+        z-index: 1;
+      
+      }
+      .line {
+        width: 2px;
+        height: 100px;
+        background-color: #ddd;
+        margin: 0 auto;
+        margin-top: -5px;
+      }
+      
     }
-    
-    .circle {
-      width: 50px;
-      height: 50px;
-      background-color: #ddd;
-      border-radius: 50%;
-      margin: 0 auto;
-      z-index: 1;
-      position: relative;
-    }
-    
-    .line {
-      width: 2px;
-      height: 100px;
-      background-color: #ddd;
-      margin: 0 auto;
-      margin-top: -5px;
-    }
-    
+      
     .hire-btn {
       display: inline-block;
       margin-top: 20px;
@@ -259,24 +257,41 @@ body{
       text-decoration: none;
       border-radius: 6px;
       transition: all 0.3s ease;
+     
     }
     
     .hire-btn:hover {
       background-color: #5b1ebc;
       color: #fff;
+       &:hover .circle{
+        background-color: #5b1ebc;
+      }
+      
     }
+    
   }
   .services-section {
+    width: 1200px;
+    margin: auto;
     text-align: center;
-    padding: 80px 20px;
+    
+    
     .services-container {
       display: flex;
       justify-content: center;
-      gap: 60px;
+      padding-bottom: 30px;
+     
       flex-wrap: wrap;
       .service-box {
       width: 300px;
       padding: 20px;
+      border-bottom: 1px solid gray;
+      border-right: 1px solid gray;
+      &:last-child{
+        border-right: none;
+        border-bottom: none;
+      }
+
      
     }
     .service-description{
@@ -288,24 +303,58 @@ body{
    
   }
   .relation{
-    button{
+    width: 1340px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .relation-info{
+      width: 400px;
+    }
+    .consult{
+      padding: 20px;
       
+    }
+    button{
+      padding: 20px 20px;
+      background-color: gray;
+      color: white;
+      border: 3px solid red;
+      cursor: pointer;
+      &:hover{
+        background-color: purple;
+        color: white;
+    
+      }
+    }
+    .img{
+      border: 10px solid #3F1771;
+      padding: 20px;
+      img{
+       
+        margin-left: -100px;
+      }
     }
     
   }
+  .team{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
    
-  /* .section-tagline {
-    text-transform: uppercase;
-    color: #888;
-    font-size: 14px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    text-align: center;
+    .perfect-team{
+      display: flex;
+      justify-content: space-between;
+     
+      text-align: center;
+    }
+    .test-img{
+      width: 170px;
+      clip-path: circle();
+    }
   }
-  
-  .section-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 50px;
-  } */
+   
+ 
   
  
