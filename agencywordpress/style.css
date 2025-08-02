@@ -291,6 +291,15 @@ body{
         border-right: none;
         border-bottom: none;
       }
+      &:nth-child(3){
+        border-right: none;
+      }
+      &:nth-child(4){
+        border-bottom: none;
+      }
+      &:nth-child(5){
+        border-bottom: none;
+      }
 
      
     }
@@ -306,7 +315,8 @@ body{
     width: 1340px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+padding-top: 50px;
+    justify-content: space-between; 
     .relation-info{
       width: 400px;
     }
@@ -332,28 +342,181 @@ body{
       img{
        
         margin-left: -100px;
+        box-shadow:5px 5px 5px gray;
       }
     }
     
   }
   .team{
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-   
+    background-color: #EDF5F8;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
-    .perfect-team{
+    .team-info{
+      padding-top: 50px;
+      width: 1200px;
+  gap: 50px;
+      margin: auto;
       display: flex;
       justify-content: space-between;
-     
       text-align: center;
-    }
-    .test-img{
-      width: 170px;
-      clip-path: circle();
+      .perfect-team{
+        display: flex;
+       margin: auto;
+       gap: 50px;
+        text-align: center;
+      }
+      .test-img{
+        width: 170px;
+        clip-path: circle();
+        border: 2px solid purple;
+       
+       
+       
+      }
+      .analyst{
+        width: 250px;
+        height: 300px;
+        padding-top: 50px;
+        background-color: #fff;
+        border-radius: 10px;
+        gap: 50px;
+        padding-bottom: 50px;
+        &:hover{
+          .test-img{
+            border: 2px solid purple;
+            visibility: visible;
+          }
+        }
+        .line{
+          width: 40px;
+          height: 4px;
+          background-color: purple;
+          margin: 0 auto;
+         
+        }
+
+       
+        .mirum{
+          color: gray;
+          width: 245px;
+          margin: auto;
+        }
+        
+      }
     }
   }
+  .counter{
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    
+    .counter-box {
+      
+      min-width: 150px;
+      padding: 10px;
+      border-right: 1px solid gray;
+      &:last-child{
+        border-right: none;
+      }
+    }
+    .counter-box img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    
+    .counter-box h2 {
+      font-size: 32px;
+      color: #000;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .counter-line {
+      width: 40px;
+      height: 4px;
+      background-color: purple;
+      margin: 0 auto;
+    }
+  }
+ .gallery{
+    text-align: center;
+    .gallery-box{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .gallery-box img{
+      width: 25%;
+     
+      
+    }
+   
+   
+  }
+  .blog{
+    width: 100%;
+    text-align: center;
+    .blog-box{
+      display: flex;
+      margin: auto;
+      width: 1200px;
+      gap: 20px;
+      text-align: justify;
+     
+    }
+    .blog-box img{
+      width: 394px;
+      height: 268px;
+      
+    }
+    .admin{
+      color: gray;
+      text-decoration: none;
+      &:hover{
+        color: purple;
+      }
+    }
+    .post{
+      color: gray;
+    }
+    .blog-para{
+      color: black;
+      text-decoration: none;
+      &:hover{
+        color: purple;
+      }
+    }
+    .lorem{
+      width: 350px;
+      color: gray;
+      padding-bottom: 30px;
+      
+    }   
+    .btn1{
+      padding: 20px 20px;
+      background-color: #3F1771;
+      color: white;
+     text-decoration: none;
+      cursor: pointer;
+      border: none;
+      &:hover{
+        background-color: #ddd;
+        color: black;
+      }
+    } 
+    
+  }
+ 
+ 
+  
+ 
+  
+ 
+  
+  
    
  
   
