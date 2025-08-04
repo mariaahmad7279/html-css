@@ -280,13 +280,18 @@ body{
       display: flex;
       justify-content: center;
       padding-bottom: 30px;
-     
       flex-wrap: wrap;
+     
       .service-box {
       width: 300px;
       padding: 20px;
       border-bottom: 1px solid gray;
       border-right: 1px solid gray;
+      padding: 50px 30px;
+      &:hover{
+          background-color: #EDF5F8;
+        
+      }
       &:last-child{
         border-right: none;
         border-bottom: none;
@@ -368,11 +373,8 @@ padding-top: 50px;
       }
       .test-img{
         width: 170px;
-        clip-path: circle();
-        border: 2px solid purple;
-       
-       
-       
+        border-radius: 50%;
+        /* clip-path: circle(); */
       }
       .analyst{
         width: 250px;
@@ -384,7 +386,7 @@ padding-top: 50px;
         padding-bottom: 50px;
         &:hover{
           .test-img{
-            border: 2px solid purple;
+            border: 5px solid purple;
             visibility: visible;
           }
         }
@@ -447,11 +449,71 @@ padding-top: 50px;
     .gallery-box{
       display: flex;
       flex-wrap: wrap;
+      img{
+        width: 25%;
+      }
+      .gallery-info{
+        width: 25%;
+        position: relative;
+        color: #000;
+        &:hover{
+          .hover{
+            visibility: visible;
+          }
+        }
+        &:hover::after{
+          left: 0;
+          position: absolute;
+          top: 0;
+          padding-left:5px;
+          border-left:1px solid white ;
+          left: 20px;
+          width: 100%;
+          height: 100%;
+          color: #fff;
+          opacity: 0.4;
+          /* visibility: hidden; */
+         background-color: #571f9c;
+         content: ;
+         clip-path: polygon(0% 0%, 88% 0, 62% 50%, 88% 100%, 0% 100%);
+        
+        }
+
+
+      }
+     
+    
+     
+
     }
     .gallery-box img{
-      width: 25%;
+      width: 100%;
+      background-color: #501796;
      
       
+    } 
+    .hover{
+      position: absolute;
+      top: 0;
+      /* padding-left:5px;
+      border-left:1px solid white ; */
+      left: 20px;
+    z-index: 100;
+      visibility: hidden;
+     background-color: #6c2bd9;
+    
+      .icons{
+        display: flex;
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        .link{
+          border-radius: 2px solid #fff;
+          background-color: #6c2bd9;
+        }
+       
+
+      }
     }
    
    
@@ -509,6 +571,141 @@ padding-top: 50px;
     } 
     
   }
+  .clarifications{
+    margin: 50px 0;
+   
+    .clarifications-box{
+      display: flex;
+      justify-content: space-between;
+    
+     
+    }
+    .clarified{
+      display: flex;
+      gap: 20px;
+      background-color: #edf5f8;
+      width: 512px;
+      padding: 120px 30px;
+      margin-bottom: 40px;
+      p{
+        width: 220px;
+      }
+    }
+    .legendary{
+      display: flex;
+      gap: 20px;
+      background-color: #666;
+      width: 512px;
+      padding: 120px 30px;
+      p{
+        width: 220px;
+      }
+    }
+   
+
+    .pakage{
+      display: flex;
+      gap: 20px;
+      background-color: #edf5f8;
+      width: 512px;
+      padding: 120px 30px;
+      margin-bottom: 40px;
+      p{
+        width: 220px;
+      }
+    }
+    .clarifications-box img{
+      width: 110px;
+     
+    }
+    
+  }
+  .footer {
+    background: #111;
+    color: #aaa;
+    padding: 40px 20px;
+    font-family: sans-serif;
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .footer-col {
+      flex: 1 1 300px;
+      padding: 20px;
+    }
+    
+    .footer-col h2, .footer-col h3 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    
+    .footer-col p, .footer-col li {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      columns: 2;
+    }
+    .footer-col ul li {
+      margin-bottom: 8px;
+    }
+    
+    .footer-col ul li a {
+      color: #aaa;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .social-icons span {
+      font-size: 18px;
+      margin-right: 10px;
+      cursor: pointer;
+      color: #aaa;
+      transition: color 0.3s;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding: 20px 0;
+      border-top: 1px solid #222;
+      font-size: 13px;
+    }
+    
+    .footer-bottom a {
+      color: #aaa;
+      text-decoration: none;
+    }
+    .logo-icon {
+      img{
+        width: 150px;
+      }
+     
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    .counter-line {
+      width: 40px;
+      height: 4px;
+      background-color: purple;
+     
+    }
+  }
+  
+  
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+  
  
  
   

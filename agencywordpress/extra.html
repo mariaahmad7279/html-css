@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            display: flex;
+            gap: 10px;
+            position: relative;
+                &:hover{
+                    .maximus{
+                        visibility: visible;
+                    }
+                    }
+            .img{
+                img{
+                    width: 250px;
+                }     
+            }
+        }
+        
+    .maximus{ 
+        position: absolute;
+        top: 0;
+        left: 20px;
+        padding-left: 20px;
+        border-left: 3px solid red;
+        background-color: aqua;
+        width: 200px;
+       
+            visibility: hidden;
+       
+
+    }
+        .info{
+            display: flex;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img">
+            <img src="./images/blog1.jpg" alt="">
+        </div>
+        <div class="maximus">
+            <div class="info">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-heart"></i>
+               
+            </div>
+            <div>
+                <p>maximus lorin port</p>
+                <p>Business</p>
+                <p>Business</p>
+            </div>
+        </div>
+       
+      
+    </div>
+</body>
+</html>
