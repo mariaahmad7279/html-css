@@ -2,74 +2,134 @@ body{
     margin: 0;
     padding: 0;
 }
+/* start common style */
 .header1{
    
-    background-color: #3F1771;
-    
-    .head-menu{
-        width: 1200px;
-        padding: 10px 0;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .logo{
-            a{
-                color: white;
-                text-decoration: none;
-                display: flex;
-                gap: 10px;
-            }
-           
-        }
-        .nav-menu{
-            display: flex;
-            gap: 40px;
-            a{
-                text-decoration: none;
-                color: white;
-                display: flex;
-                gap: 5px;
-                border-right: 1px solid white;
-                padding-right: 5px; 
-                &:last-child{
-                    border-right: none;
-                }
-               
-            }
-        }
+  background-color: #3F1771;
+  
+  .head-menu{
+      width: 1200px;
+      padding: 10px 0;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo{
+          a{
+              color: white;
+              text-decoration: none;
+              display: flex;
+              gap: 10px;
+          }
+         
+      }
+      .nav-menu{
+          display: flex;
+          gap: 40px;
+          a{
+              text-decoration: none;
+              color: white;
+              display: flex;
+              gap: 5px;
+              border-right: 1px solid white;
+              padding-right: 5px; 
+              &:last-child{
+                  border-right: none;
+              }
+             
+          }
+      }
 
-    }
+  }
 }
 .header2{
-   
-    background-color: #777777;
-    .head-menu{
-        width: 1200px;
-        padding: 10px 0;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .logo{
-            width: 200px;
-           
-        }
-        .nav-menu{
-            display: flex;
-            gap: 40px;
-            a{
-                text-decoration: none;
-                color: black;
-                &:hover{
-                    color: #3F1771;
-                }
-            }
-        }
+ 
+  background-color: #777777;
+  .head-menu{
+      width: 1200px;
+      padding: 10px 0;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo{
+          width: 200px;
+         
+      }
+      .nav-menu{
+          display: flex;
+          gap: 40px;
+          a{
+              text-decoration: none;
+              color: black;
+              &:hover{
+                  color: #3F1771;
+              }
+          }
+      }
 
-    }
-  
+  }
+
 }
+.primary{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+
+}
+.secondary{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+ 
+
+}
+.para{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+
+}
+.button{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  .btn1{
+      padding: 20px 20px;
+      background-color: #3F1771;
+      color: white;
+     text-decoration: none;
+      cursor: pointer;
+      border: none;
+      &:hover{
+          background-color: #ddd;
+          color: black;
+      }
+  }
+  .btn2{
+      padding: 20px 20px;
+    
+      color: white;
+      border: 1px solid white;
+      cursor: pointer;
+      &:hover{
+          background-color: #ddd;
+          color: black;
+      }
+  }
+}
+
+
+
 .home{
     width: 100%;
     margin: auto;
@@ -94,35 +154,7 @@ body{
             }
            
         }
-        .button{
-            display: flex;
-            gap: 40px;
-            justify-content: center;
-            .btn1{
-                padding: 20px 20px;
-                background-color: #3F1771;
-                color: white;
-               text-decoration: none;
-                cursor: pointer;
-                border: none;
-                &:hover{
-                    background-color: #ddd;
-                    color: black;
-                }
-            }
-            .btn2{
-                padding: 20px 20px;
-              
-                color: white;
-                border: 1px solid white;
-                cursor: pointer;
-                &:hover{
-                    background-color: #ddd;
-                    color: black;
-                }
-            }
-        }
-
+       
         
     }
  
