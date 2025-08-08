@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
         }
-        .main{
+
+        .main {
             display: flex;
             gap: 10px;
             position: relative;
-                &:hover{
-                    .maximus{
-                        visibility: visible;
-                    }
-                    }
-            .img{
-                img{
+
+            &:hover {
+                .maximus {
+                    visibility: visible;
+                }
+            }
+
+            .img {
+                img {
                     width: 250px;
-                }     
+                }
             }
         }
-        
-    .maximus{ 
-        position: absolute;
-        top: 0;
-        left: 20px;
-        padding-left: 20px;
-        border-left: 3px solid red;
-        background-color: aqua;
-        width: 200px;
-       
-            visibility: hidden;
-       
 
-    }
-        .info{
+        .maximus {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            padding-left: 20px;
+            border-left: 3px solid red;
+            background-color: aqua;
+            width: 200px;
+
+            visibility: hidden;
+
+
+        }
+
+        .info {
             display: flex;
             gap: 10px;
         }
 
+        .team-grid {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+
+            img {
+                width: 25%;
+            }
+
+        }
+
+        .center-circle {
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            width: 500px;
+            height: 300px;
+            top: 50%;
+            bottom: 50%;
+            left: 50%;
+            right: 50%;
+            text-align: center;
+
+
+        }
     </style>
 </head>
+
 <body>
     <div class="main">
         <div class="img">
@@ -56,7 +87,7 @@
             <div class="info">
                 <i class="fa fa-search"></i>
                 <i class="fa fa-heart"></i>
-               
+
             </div>
             <div>
                 <p>maximus lorin port</p>
@@ -64,8 +95,29 @@
                 <p>Business</p>
             </div>
         </div>
-       
-      
+
+
     </div>
+    <section class="team-highlight">
+        <div class="business">
+            <h2 class="heading">We drive <strong>Business</strong> Performance</h2>
+            <div class="team-grid">
+                <img src="./images/work-with-us2-932x1024.jpg" alt="Team 1">
+                <img src="./images/work-with-us3-932x1024.jpg" alt="Team 2">
+                <img src="./images/work-with-us4-932x1024.jpg" alt="Team 1">
+                <img src="./images/work-with-us5-932x1024.jpg" alt="Team 2">
+                <img src="./images/work-with-us6-932x1024.jpg" alt="Team 1">
+                <img src="./images/work-with-us7-932x1024.jpg" alt="Team 2">
+                <img src="./images/work-with-us8-932x1024.jpg" alt="Team 1">
+                <img src="./images/work-with-us9-932x1024.jpg" alt="Team 2">
+
+                <div class="center-circle">
+                    <h3 class="heading">Passionate <br> Specialists</h3>
+                    <a href="#" class="btn">Meet our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

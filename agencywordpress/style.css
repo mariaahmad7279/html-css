@@ -161,9 +161,17 @@ body {
   padding: 10px 30px;
   text-decoration: none;
   margin: 30px;
+  /* border: 3px transparent; */
   &:hover {
-    border: 3px solid red;
+    border: 3px solid #501796;
   }
+}
+.linebreak {
+  width: 40px;
+  height: 4px;
+  background-color: purple;
+  margin: 0 auto;
+  transition: width 0.2s;
 }
 
 /*start home page style*/
@@ -790,5 +798,89 @@ body {
     }
     /* .btn {
     } */
+  }
+}
+.features-section {
+  padding: 100px 0;
+  .features {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .feature-box {
+    text-align: center;
+    .icon {
+      font-size: 75px;
+    }
+  }
+  .heading-typo {
+    width: 320px;
+  }
+  .heading {
+    font-size: 20px;
+    color: #000;
+  }
+  .btn {
+    border: 3px solid transparent;
+    &:hover {
+      background-color: #3f1771;
+      color: white;
+    }
+  }
+}
+.team-highlight {
+  .business {
+    position: relative;
+    .heading {
+      text-align: center;
+      color: #501796;
+      padding-bottom: 50px;
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      img {
+        width: 25%;
+      }
+    }
+    .center-circle {
+      position: absolute;
+      /* border-radius: 50%; */
+      background-color: white;
+      clip-path: circle();
+      padding: 150px;
+      top: 160px;
+      align-items: center;
+      left: 35%;
+
+      text-align: center;
+      .heading {
+        font-size: 42px;
+        color: #000;
+        font-weight: 600;
+      }
+      .btn {
+        border: 3px solid #501796;
+        &:hover {
+          background-color: #501796;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.job-roles {
+  .creative {
+    width: 1200px;
+    margin: auto;
+    .role {
+      display: flex;
+    }
+    .heading-typo {
+      width: 850px;
+    }
   }
 }
