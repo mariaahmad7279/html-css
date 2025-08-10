@@ -981,29 +981,42 @@ body {
 .team-work {
   display: flex;
   width: 100%;
-  .team-work .text-box {
-    flex: 1;
+  .text-box {
     background: #5c2d91;
-    color: #fff;
     padding: 40px;
+    .heading {
+      color: white;
+      padding-left: 50px;
+    }
+    .heading-typo {
+      color: white;
+      padding-left: 50px;
+    }
   }
   .graph {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 30px;
+    /* padding-left: 30px; */
     .graph-info {
       display: flex;
       gap: 20px;
       align-items: start;
-      .heading-typo {
-        margin: 0;
-      }
+      /* .icon {
+        /* font-size: 32px; */
+      /* color: white; */
+    }
+    */ .heading-typo {
+      margin: 0;
+      color: white;
+      padding-bottom: 10px;
     }
   }
+}
 
-  .image-box img {
-    width: 100%;
-  }
+.image-box img {
+  width: 100%;
 }
 
 /* Team Member */
@@ -1011,8 +1024,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 40px;
+  width: 1200px;
+  margin: auto;
+  padding-top: 50px;
 }
-.team-member .member-image {
+/* .team-member .member-image {
   flex: 1;
   text-align: center;
 }
@@ -1022,7 +1038,7 @@ body {
 .team-member .member-info {
   flex: 2;
   padding: 20px;
-}
+} */
 .stats {
   display: flex;
   gap: 30px;
