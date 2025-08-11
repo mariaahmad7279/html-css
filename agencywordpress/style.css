@@ -1022,11 +1022,16 @@ body {
 /* Team Member */
 .team-member {
   display: flex;
-  flex-wrap: wrap;
+
   padding: 40px;
   width: 1200px;
   margin: auto;
   padding-top: 50px;
+  .team-info {
+    .heading-typo {
+      width: 605px;
+    }
+  }
 }
 /* .team-member .member-image {
   flex: 1;
@@ -1043,9 +1048,10 @@ body {
   display: flex;
   gap: 30px;
   margin-top: 20px;
-}
-.stats div {
-  text-align: center;
+  .heading-typo {
+    text-align: center;
+    color: #000;
+  }
 }
 
 /* Experts */
