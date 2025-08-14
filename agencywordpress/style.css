@@ -1271,3 +1271,14 @@ body {
     }
   }
 }
+.detail {
+  background-color: #501796;
+  text-align: center;
+  padding: 20px;
+  .heading {
+    color: white;
+  }
+  a {
+    text-decoration: none;
+  }
+}
