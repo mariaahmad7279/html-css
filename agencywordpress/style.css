@@ -164,6 +164,8 @@ body {
   border: 3px solid transparent;
   &:hover {
     border: 3px solid #501796;
+    background-color: #501796;
+    color: white;
   }
 }
 .linebreak {
@@ -1271,6 +1273,40 @@ body {
     }
   }
 }
+
+.product-sell {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+  .card {
+    text-align: center;
+    padding: 20px;
+    .heading-typo {
+      width: 370px;
+    }
+  }
+
+  .icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: #5b16a6;
+    margin: 0 auto 20px;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-wrapper i {
+    color: white;
+    font-size: 20px;
+    transform: rotate(-45deg);
+  }
+}
+
 .detail {
   background-color: #501796;
   text-align: center;
@@ -1278,7 +1314,202 @@ body {
   .heading {
     color: white;
   }
-  a {
-    text-decoration: none;
+}
+/* end services page style */
+/* start process page style */
+
+/* ====== Step Sections ====== */
+.step-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  /* flex-wrap: wrap; */
+  padding: 50px 20px;
+  .step-section img {
+    width: 600px;
   }
+
+  .step-content {
+    width: 560px;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .step-number {
+    display: inline-block;
+    background: #eee;
+    color: gray;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+/* ====== Evolution of Design ====== */
+.evolution {
+  text-align: center;
+  padding: 60px 20px;
+  .heading {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .heading-typo {
+    width: 300px;
+  }
+  .evolution h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .evolution-steps {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    gap: 50px;
+    justify-content: space-between;
+  }
+  .evo-card {
+    max-width: 200px;
+  }
+
+  .evo-circle {
+    background-image: url(./images/process3.jpg);
+    width: 100px;
+    height: 100px;
+    background: #6a1b9a;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+}
+/* ====== Strategy Section ====== */
+.strategy-section {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  padding: 100px 0;
+  .strategy-content {
+    width: 400px;
+  }
+  .straw {
+    flex: 2;
+    padding: 50px;
+    .straw-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding-top: 20px;
+      .straw-card {
+        padding: 10px;
+        display: flex;
+        gap: 15px;
+      }
+      .straw-card i {
+        font-size: 30px;
+        color: #6a1b9a;
+      }
+
+      .heading {
+        margin: 0;
+        font-size: 18px;
+        text-align: justify;
+        color: black;
+      }
+
+      .heading-typo {
+        font-size: 14px;
+        color: gray;
+        text-align: left;
+        width: 300px;
+      }
+    }
+  }
+}
+
+/* ====== Highlight Section ====== */
+.highlight {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px 20px;
+  background: #f5f5f5;
+}
+
+.highlight img {
+  max-width: 350px;
+  border-radius: 5px;
+}
+
+.highlight-text {
+  max-width: 500px;
+}
+
+.highlight-text h4 {
+  color: gray;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.highlight-text h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.highlight-text ul {
+  padding: 0;
+  list-style: none;
+  columns: 2;
+}
+
+.highlight-text ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* ====== Photo Gallery ====== */
+.gallery {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.gallery h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.gallery p {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 40px;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 5px;
+  overflow-x: auto;
+}
+
+.gallery-images img {
+  max-width: 250px;
+  border-radius: 5px;
+}
+
+.view-btn {
+  margin-top: 20px;
+  background: #6a1b9a;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
 }
