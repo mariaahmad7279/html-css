@@ -1646,18 +1646,35 @@ body {
 /* Info Blocks */
 .info-blocks {
   display: flex;
-  gap: 20px;
-  padding: 60px 20px;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #f2f3f8;
+  padding: 60px 20px;
   .block {
-    flex: 1;
-    min-width: 280px;
-    text-align: center;
+    display: flex;
+    .snd-img {
+      width: 630px;
+    }
+    .winer {
+      display: flex;
+
+      .heading {
+        width: 240px;
+      }
+      .heading-typo {
+        width: 255px;
+      }
+      .better {
+        padding: 30px;
+      }
+    }
   }
+
   .block img {
-    width: 100%;
-    border-radius: 10px;
+    width: 315px;
+  }
+  .snd-img {
+    width: 630px;
   }
 }
 
@@ -1687,5 +1704,18 @@ body {
   }
   .grid .logo:nth-last-child(-n + 4) {
     border-bottom: none;
+  }
+}
+/* end clients page style
+start work page style */
+.client-goal {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  padding: 60px 20px;
+  img {
+    width: 222px;
+    height: 412px;
   }
 }
