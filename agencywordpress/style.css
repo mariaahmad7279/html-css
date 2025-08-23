@@ -1520,14 +1520,14 @@ body {
     position: absolute;
     visibility: hidden;
     bottom: 0;
-    &:hover {
+    /* &:hover {
       a {
         i {
           color: white;
           background-color: #501796;
         }
       }
-    }
+    } */
     a {
       i {
         color: white;
