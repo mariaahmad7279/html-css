@@ -1801,3 +1801,10 @@ start work page style */
     border-right: none;
   }
 }
+@media screen and (max-width: 1000px) {
+  .header1 {
+    width: 300px;
+    color: #3f1771;
+    background-color: red;
+  }
+}
