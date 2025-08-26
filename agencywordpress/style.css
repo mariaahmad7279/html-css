@@ -1801,10 +1801,28 @@ start work page style */
     border-right: none;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991px) {
   .header1 {
-    width: 300px;
-    color: #3f1771;
-    background-color: red;
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 420px) {
+  .header1 {
+    width: 100%;
+    display: block;
+    padding-left: 10px;
+    .head-menu {
+      display: block;
+    }
+    .nav-menu {
+      a {
+        display: block;
+      }
+
+      padding-top: 20px;
+    }
   }
 }
