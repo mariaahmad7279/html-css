@@ -13,7 +13,69 @@
             padding: 0;
         }
 
-        .main {
+        nav {
+            height: 60px;
+            background-color: black;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .links {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        nav a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            height: 100%;
+            padding: 0 20px;
+
+
+        }
+
+        nav a:hover {
+            background-color: blue;
+        }
+
+        nav .links home {
+            margin-right: auto;
+        }
+
+        nav i {
+            fill: var(white);
+        }
+
+        #sidebar-active {
+            display: none;
+        }
+
+        .open,
+        .close {
+            display: none;
+            padding: 0 20px;
+        }
+
+        @media(max-width:450px) {
+            .links {
+                flex-direction: column;
+                align-items: flex-start;
+                position: fixed;
+                top: 0;
+                right: 0;
+            }
+
+
+        }
+
+
+        /* .main {
             display: flex;
             gap: 10px;
             position: relative;
@@ -74,12 +136,12 @@
             text-align: center;
 
 
-        }
+        } */
     </style>
 </head>
 
 <body>
-    <div class="main">
+    <!-- <div class="main">
         <div class="img">
             <img src="./images/blog1.jpg" alt="">
         </div>
@@ -117,7 +179,23 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <nav>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open">
+            <i class="fa fa-bars"></i>
+        </label>
+        <div class="links">
+            <label for="sidebar-active" class="close">
+                <i class="fa fa-close"></i>
+            </label>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Services</a>
+            <a href="">Clients</a>
+        </div>
+    </nav>
 </body>
 
 </html>
