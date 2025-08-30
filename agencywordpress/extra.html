@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
         }
 
-        nav {
+        /* nav {
             height: 60px;
             background-color: black;
             display: flex;
@@ -72,7 +75,7 @@
             }
 
 
-        }
+        } */
 
 
         /* .main {
@@ -137,7 +140,61 @@
 
 
         } */
+        nav {
+            background-color: #0082e6;
+            width: 100%;
+            height: 80px;
+
+        }
+
+        .logo {
+            font-size: 35px;
+            color: white;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 5px;
+            line-height: 80px;
+        }
+
+        a {
+            color: white;
+            text-transform: uppercase;
+            font-size: 17px;
+            border-radius: 3px;
+        }
+
+        /* .active, */
+        a:hover {
+            transition: .5s;
+            color: #1b9bff;
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            line-height: 80px;
+            float: right;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check {
+            display: none;
+        }
     </style>
+
+
 </head>
 
 <body>
@@ -180,7 +237,8 @@
             </div>
         </div>
     </section> -->
-    <nav>
+    <!-- <nav>
+
         <input type="checkbox" id="sidebar-active">
         <label for="sidebar-active" class="open">
             <i class="fa fa-bars"></i>
@@ -195,6 +253,21 @@
             <a href="">Services</a>
             <a href="">Clients</a>
         </div>
+    </nav> -->
+    <nav>
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">Responsive Navbar</label>
+        <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="">About us </a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Works</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Clients</a></li>
+        </ul>
     </nav>
 </body>
 
