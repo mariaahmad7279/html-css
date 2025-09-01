@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .div {
+            width: 100%;
+            height: 80px;
+            background-color: aquamarine;
+        }
+
+        .menu {
+            display: none;
+            float: right;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+
+            }
+        }
+
+        .menu-icon {
+            display: block;
+            float: right;
+        }
+
+        #menu-toggle:checked~.menu {
+            display: block;
+        }
+
+        @media(max-width:768) {
+            /* #menu-toggle:checked~.menu {
+                display: block;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-icon">☰ </label>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+
+
+</body>
+
+</html>
