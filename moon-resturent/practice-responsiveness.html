@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .icon {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box {
+            display: block;
+            cursor: pointer;
+            padding: 15px;
+            background: #f5f5f5;
+        }
+
+
+        #accordian {
+            display: none;
+        }
+
+        .para {
+            display: none;
+            padding-top: 10px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        #accordian:checked~.box .para {
+            display: block;
+        }
+
+        .main {
+            width: 1200px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: auto;
+        }
+
+        .arrow .up {
+            display: none;
+
+        }
+
+        .arrow .down {
+            display: inline;
+
+        }
+
+        #accordian:checked~.box .fa-angle-down {
+            transform: rotate(180deg);
+        }
+
+        #accordian:checked~.box .arrow .up {
+            display: inline;
+        }
+
+        #accordian:checked~.box .arrow .down {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="accordian">
+        <label for="accordian" class="box">
+            <div class="icon">
+                <div>
+                    <p>Accordian item #1</p>
+                    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi,
+                        necessitatibus velit
+                        aperiam quaerat fugiat, nam omnis laboriosam eos tempora dolores ea minus soluta. Sit aut eius
+                        non
+                        est quibusdam.</p>
+                </div>
+
+                <div class="arrow">
+                    <i class='fa fa-angle-down'></i>
+                    <i class="fa fa-angle-up"></i>
+                </div>
+            </div>
+        </label>
+    </div>
+    <div class="main">
+        <input type="checkbox" id="accordian">
+        <label for="accordian" class="box">
+            <div class="icon">
+                <div>
+                    <p>Accordian item #1</p>
+                    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi,
+                        necessitatibus velit
+                        aperiam quaerat fugiat, nam omnis laboriosam eos tempora dolores ea minus soluta. Sit aut eius
+                        non
+                        est quibusdam.</p>
+                </div>
+
+                <div class="arrow">
+                    <i class='fa fa-angle-down'></i>
+                    <i class="fa fa-angle-up"></i>
+                </div>
+            </div>
+        </label>
+    </div>
+    <div class="main">
+        <input type="checkbox" id="accordian">
+        <label for="accordian" class="box">
+            <div class="icon">
+                <div>
+                    <p>Accordian item #1</p>
+                    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi,
+                        necessitatibus velit
+                        aperiam quaerat fugiat, nam omnis laboriosam eos tempora dolores ea minus soluta. Sit aut eius
+                        non
+                        est quibusdam.</p>
+                </div>
+
+                <div class="arrow">
+                    <i class='fa fa-angle-down'></i>
+                    <i class="fa fa-angle-up"></i>
+                </div>
+            </div>
+        </label>
+    </div>
+</body>
+
+</html>
