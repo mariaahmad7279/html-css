@@ -1,19 +1,76 @@
 /* Header */
-header {
+.header1 {
+  width: 100%;
+  margin: auto;
+}
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  width: 1140px;
+  margin: auto;
   background: #fff;
-  border-bottom: 1px solid #ddd;
+
   position: sticky;
   top: 0;
   z-index: 1000;
+  a {
+    text-decoration: none;
+    color: #796770;
+  }
+  .menu {
+    display: flex;
+    gap: 50px;
+
+    .menu1 {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+  }
 }
-header nav a {
-  margin: 0 15px;
-  font-weight: bold;
-  color: #333;
+.header2 {
+  width: 100%;
+  margin: auto;
+  .head {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    li {
+      a {
+        text-decoration: none;
+        color: #796770;
+      }
+    }
+  }
+  .menu2 {
+    display: flex;
+    gap: 20px;
+    a {
+      text-decoration: none;
+    }
+    .btn {
+      color: #796770;
+      padding: 15px;
+      border: 1px solid #796770;
+      background-color: transparent;
+      border-radius: 5px;
+      cursor: pointer;
+      & :hover {
+        background-color: #ab8a62;
+        color: white;
+      }
+    }
+  }
 }
 
 /* Hero Section */

@@ -44,7 +44,21 @@
             margin: auto;
         }
 
-        .arrow .up {
+
+
+        #accordian:checked~.box .fa-angle-down {
+            transform: rotate(180deg);
+        }
+
+        /* #accordian:checked~.box .arrow .up {
+            display: inline;
+        }
+
+        #accordian:checked~.box .arrow .down {
+            display: none;
+        } */
+
+        /* .arrow .up {
             display: none;
 
         }
@@ -52,18 +66,78 @@
         .arrow .down {
             display: inline;
 
+        } */
+
+        .icon {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        #accordian:checked~.box .fa-angle-down {
-            transform: rotate(180deg);
+        .box {
+            display: block;
+            cursor: pointer;
+            padding: 15px;
+            background: #f5f5f5;
         }
 
-        #accordian:checked~.box .arrow .up {
-            display: inline;
-        }
 
-        #accordian:checked~.box .arrow .down {
+        #accor {
             display: none;
+        }
+
+        .para {
+            display: none;
+            padding-top: 10px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        #accor:checked~.box .para {
+            display: block;
+        }
+
+        .main {
+            width: 1200px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: auto;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box {
+            display: block;
+            cursor: pointer;
+            padding: 15px;
+            background: #f5f5f5;
+        }
+
+
+        #dian {
+            display: none;
+        }
+
+        .para {
+            display: none;
+            padding-top: 10px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        #dian:checked~.box .para {
+            display: block;
+        }
+
+        .main {
+            width: 1200px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: auto;
         }
     </style>
 
@@ -85,14 +159,14 @@
 
                 <div class="arrow">
                     <i class='fa fa-angle-down'></i>
-                    <i class="fa fa-angle-up"></i>
+                    <!-- <i class="fa fa-angle-up"></i> -->
                 </div>
             </div>
         </label>
     </div>
     <div class="main">
-        <input type="checkbox" id="accordian">
-        <label for="accordian" class="box">
+        <input type="checkbox" id="accor">
+        <label for="accor" class="box">
             <div class="icon">
                 <div>
                     <p>Accordian item #1</p>
@@ -105,14 +179,14 @@
 
                 <div class="arrow">
                     <i class='fa fa-angle-down'></i>
-                    <i class="fa fa-angle-up"></i>
+
                 </div>
             </div>
         </label>
     </div>
     <div class="main">
-        <input type="checkbox" id="accordian">
-        <label for="accordian" class="box">
+        <input type="checkbox" id="dian">
+        <label for="dian" class="box">
             <div class="icon">
                 <div>
                     <p>Accordian item #1</p>
@@ -125,7 +199,7 @@
 
                 <div class="arrow">
                     <i class='fa fa-angle-down'></i>
-                    <i class="fa fa-angle-up"></i>
+
                 </div>
             </div>
         </label>
