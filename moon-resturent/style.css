@@ -1,11 +1,17 @@
 /* Header */
-
+/* start common style */
 .primary {
   font-family: Jost, system-ui;
   font-style: normal;
   font-size: 14px;
   font-weight: 400;
   color: rgb(101, 103, 107);
+}
+.secondary {
+  font-family: "Gilda Display", serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
 }
 .header1 {
   width: 100%;
@@ -58,9 +64,11 @@
     gap: 20px;
     list-style: none;
     li {
-      a {
+      a.primary {
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+
         text-decoration: none;
-        color: #796770;
       }
     }
   }
@@ -72,39 +80,53 @@
     }
     .btn {
       color: #796770;
-
+      font-family: Jost, system-ui;
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 400;
       border: 1px solid #796770;
       background-color: transparent;
       border-radius: 5px;
       cursor: pointer;
       & :hover {
-        background-color: #ab8a62;
-        color: white;
+        background-color: rgb(171, 138, 98);
+        color: rgb(255, 255, 255);
       }
     }
   }
 }
-
+/* end common style */
 /* Hero Section */
 .hero {
-  background: url("https://picsum.photos/1600/800?hotel") no-repeat center/cover;
-  color: white;
-  text-align: center;
-  padding: 150px 20px;
+  background-image: url(./images/home-1.1.webp);
+  width: 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .lux {
+    width: 1140px;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+  }
+
+  .primary {
+    width: 560px;
+    margin: auto;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 40px;
+  }
 }
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
+
 .btn {
   background: #b4975a;
   color: white;
-  padding: 12px 25px;
+  padding: 15px 30px;
   border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 /* Booking Form */
@@ -184,4 +206,32 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
+}
+/* media query style */
+
+@media (max-width: 420px) {
+  .header1 {
+    .header {
+      width: 100%;
+    }
+    .menu {
+      display: none;
+      .menu-item {
+        display: block;
+      }
+    }
+  }
+}
+.moon {
+  display: block;
+  float: right;
+}
+#check {
+  display: none;
+}
+.menu {
+  display: none;
+}
+#check:checked ~ .box .menu {
+  display: block;
 }
