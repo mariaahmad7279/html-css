@@ -20,9 +20,9 @@
     <!-- Header -->
     <section class="header1">
         <div class="header">
-            <input type="checkbox" id="check">
+            <input type="checkbox" id="check" hidden>
             <label for="check" class="box">
-                <i class="fa fa-bars" class="moon"></i> </label>
+                <i class="fa fa-bars"></i> </label>
             <div class="menu">
                 <div class="menu-item">
                     <div class="menu1">
@@ -64,10 +64,23 @@
 
         </div>
     </section>
+    <section class="extra">
+        <div>
+            <img src="./images/logo (1).svg" alt="">
+        </div>
+        <div class="xtra-head">
+            <div class="btn">Book now</div>
+            <input type="checkbox" id="nav" hidden>
+            <i class="fa fa-bars"></i>
+        </div>
+    </section>
     <hr>
     <section class="header2">
         <div class="head">
             <div>
+                <input type="checkbox" id="checked">
+                <label for="checked" class="box">
+                    <i class="fa fa-bars"></i> </label>
                 <nav>
                     <ul>
                         <li>
@@ -133,17 +146,83 @@
     </section>
 
     <!-- Booking -->
-    <section class="booking container">
+    <!-- <section class="booking container">
         <input type="date">
         <input type="date">
         <select>
             <option>Adults</option>
+            <option>Person 1</option>
+            <option>Person 2</option>
+            <option>Person 3</option>
+            <option>Person 4</option>
+            <option>Person 5</option>
+            <option>Person 6</option>
+            <option>Person 7</option>
+            <option>Person 8</option>
+            <option>Person 9</option>
         </select>
         <select>
             <option>Children</option>
+            <option>Person 1</option>
+            <option>Person 2</option>
+            <option>Person 3</option>
+            <option>Person 4</option>
+            <option>Person 5</option>
+            <option>Person 6</option>
+            <option>Person 7</option>
+            <option>Person 8</option>
+            <option>Person 9</option>
         </select>
         <button class="btn">Check Now</button>
+    </section> -->
+    <section class="booking-section">
+        <form class="booking-form">
+            <div class="form-group">
+                <label>Check In</label>
+                <div class="input-box">
+                    <i class="fa fa-calendar"></i>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Check Out</label>
+                <div class="input-box">
+                    <i class="fa fa-calendar"></i>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Adult</label>
+                <div class="input-box">
+                    <i class="fa fa-user"></i>
+                    <select>
+                        <option>1 Person</option>
+                        <option>2 Persons</option>
+                        <option>3 Persons</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Child</label>
+                <div class="input-box">
+                    <i class="fa fa-user"></i>
+                    <select>
+                        <option>1 Child</option>
+                        <option>2 Children</option>
+                        <option>3 Children</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn">Check Now</button>
+            </div>
+        </form>
     </section>
+
 
     <!-- Facilities -->
     <h2 class="section-title">Hotel Facilities</h2>
