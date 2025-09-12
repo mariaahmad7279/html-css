@@ -104,7 +104,7 @@
 .sidebar {
   width: 300px;
   background: #111;
-  padding: 20px;
+
   min-height: 100vh;
   .primary {
     color: rgb(255, 255, 255);
@@ -133,6 +133,9 @@
     font-size: 18px;
   }
 }
+.sidebar {
+  display: none;
+}
 
 /* .menu ul li a:hover {
   color: #c59d5f;  goldish hover effect 
@@ -143,10 +146,11 @@
   .header1 {
     display: none;
   }
+  .sidebar {
+    display: block;
+  }
 }
-.sidebar {
-  display: none;
-}
+
 @media (max-width: 420px) {
   .header2 {
     width: 100%;
@@ -165,6 +169,9 @@
   }
   .sidebar {
     width: 100%;
+    position: absolute;
+    left: -100%;
+    top: 75px;
     .menu3 {
       ul {
         display: block;
@@ -172,14 +179,28 @@
     }
   }
   #checked:checked ~ .sidebar {
-    display: block;
+    /* display: block; */
+    left: 0;
   }
-  #checked:checked ~ .div2 {
+  /* #checked:checked ~ .div2 {
     display: none;
   }
   #checked:checked ~ .img1 {
     .img {
       display: none;
     }
+  } */
+}
+.sidebar {
+  p {
+    color: rgb(255, 255, 255);
+  }
+  .fa {
+    color: rgb(255, 255, 255);
+  }
+  .inner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
   }
 }
