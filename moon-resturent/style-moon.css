@@ -162,6 +162,68 @@
     padding-bottom: 40px;
   }
 }
+/* .booking {
+  background: #fff;
+  padding: 20px;
+  margin-top: -50px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .booking input,
+  .booking select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+  } */
+.booking-section {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  width: 1200px;
+}
+
+.booking-form {
+  display: flex;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  gap: 100px;
+  align-items: center;
+}
+
+/* .form-group {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2c2c54;
+  } */
+
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: #fff;
+}
+
+/* .input-box i {
+    margin-right: 8px;
+    color: #666;
+  } */
+
+/* .input-box input,
+  .input-box select {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    flex: 1;
+    background: transparent;
+  } */
 
 /* start responsiveness */
 @media (max-width: 768px) {
